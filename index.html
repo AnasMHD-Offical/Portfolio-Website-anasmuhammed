@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas Muhammed</title>
+    <!--Css Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Media Query Link-->
+    <link rel="stylesheet" href="mediaquery.css">
+    <!--Favicon link-->
+    <link rel="shortcut icon" href="assets/profileScribble.png" type="image/x-icon">
+    <!--Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Desktop nav-->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="#">Anas Muhammed</a> </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="About">About</a></li>
+                <li><a href="Experience">Experience</a></li>
+                <li><a href="Projects">Projects</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Hamburger-menu-nav-->
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="#">Anas Muhammed</a></div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <ul class="menu-list-links">
+                <li><a href="About" onclick="toggleMenu()">About</a></li>
+                <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="Projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="Contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!--Javascript link-->
+    <script src="script.js"></script>
+</body>
+</html>

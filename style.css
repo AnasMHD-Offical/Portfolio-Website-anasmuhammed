@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bgcolor: #ffffff;
+    --text-color: #000000;
+    --main-color: #00cf18;
+    --second-color: #151855;
+    --other-color: #ffffff;
+    --second-bg-color: #bdf9ca;
+
+    --h1-font: 3rem;
+    --h2-font: 2.5rem;
+    --main-font:1.5rem;
+    --p-font: 1rem;
+}
+body{
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+}
+html{
+    scroll-behavior: smooth;
+}
+a,.btn{
+    transition: all 300ms ease;
+}
+nav,.nav-links{
+    display: flex;
+    background: var(--bgcolor);
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    
+}
+
+.nav-links{
+    gap: 2.2rem;
+    list-style: none;
+    font-size: var(--main-font);
+    
+}
+.nav-links a{
+    font-size: var(--main-font);
+    color: var(--text-color);
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: var(--main-color);
+    display:inline-block;
+    -ms-transform: scale(1.1, 1.1); /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1); /* Safari */
+    transform: scale(1.1, 1.1);
+    transition: all .5s ease;
+}
+.logo a{
+    font-size: var(--h2-font);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition: all .5s ease;
+}
+.hamburger-nav{
+    display: none;
+}
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
