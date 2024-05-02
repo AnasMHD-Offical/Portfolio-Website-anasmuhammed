@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <!--Media Query Link-->
     <link rel="stylesheet" href="mediaquery.css">
+    <!--Boxicon link-->
+    <link rel="stylesheet"
+          href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!--Favicon link-->
     <link rel="shortcut icon" href="assets/profileScribble.png" type="image/x-icon">
     <!--Google Font link-->
@@ -48,7 +51,43 @@
         </div>
         </div>
     </nav>
+    <!--Hero Section-->
+    <section id="hero"> <!--Use hero instead of profile-->
+        <div class="section-pic-container">
+            <img src="assets/ScribbleProfile(3).png" alt="hero-pic">
+        </div>
+        <div class="section-text">
+            <p class="section-p">Hello, I'm</p>
+            <h1 class="title">Anas Muhammed</h1>
+            <h2 class="autotyping" id="auto-type"><span></span></h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('../assets/Anas Muhammed.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='../#contact'">Contact Info</button>
+            </div>
+            <div class="social-containers">
+                <img src="assets/linkedin.png" alt="" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/anas-muhammed-98386528a'">
+                <img src="assets/github.png" alt="" class="icon" 
+                onclick="location.href='https://github.com/AnasMHD-Offical'">
+                
+            </div>
+        </div>
+    </section>
+    
+    <!--Typed Js CDN-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!--Javascript link-->
     <script src="script.js"></script>
+    <!--Custom js filr for auto-type-->
+    <script>
+        var typed = new Typed(".autotyping",{
+            strings :["Entrepreneur","Freelancer","Full Stack Developer","UI/UX Designer","AI Specialist","Graphic Designer"],
+            loop : true,
+            typeSpeed : 150,
+            backSpeed:150,
+            showCursor: false,
+            
+        })
+    </script>
 </body>
 </html>

@@ -7,13 +7,15 @@
     --bgcolor: #ffffff;
     --text-color: #000000;
     --main-color: #00cf18;
-    --second-color: #151855;
+    --second-color: #010434;
     --other-color: #ffffff;
-    --second-bg-color: #bdf9ca;
+    --second-bg-color: #7ED957;
 
     --h1-font: 3rem;
     --h2-font: 2.5rem;
+    --type-font:2rem;
     --main-font:1.5rem;
+    --hero-p-font:1.2rem;
     --p-font: 1rem;
 }
 body{
@@ -136,4 +138,104 @@ nav{
 }
 .hamburger-icon.open{
     transform: none;
+}
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    
+}
+.section-container{
+    display: flex;
+    
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-pic-container{
+    display: flex;
+    height: 400px;
+    width : 400px;
+    margin: auto 0;
+    filter: drop-shadow(1px 1px 1px var(--second-color));
+    
+}
+.section-pic-container:hover{
+    transform: translateY(-4px);
+    transition: all .5s ease;
+}
+.section-text{
+    align-self: center;
+    text-align: center;
+   
+    
+}
+.section-p{
+    font-size: var(--hero-p-font);
+    font-weight: 600;
+    color: var(--main-color);
+}
+.title{
+    font-size: var(--h1-font);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.auto-type span{
+    font-size: var(--type-font);
+    font-weight: 600;
+    color: var(--main-color);
+}
+.social-containers{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.btn-color-2{
+    border: var(--text-color) 0.12rem solid;
+    background: var(--bgcolor);
+}
+.btn-color-2:hover{
+    transform: translateY(-2px);
+    color: var(--text-color);
+    border: var(--main-color) 0.12rem solid;
+    filter: drop-shadow(1px 3px 1px var(--main-color));
+}
+.btn-color-1{
+    border: var(--text-color) 0.12rem solid;
+    background: var(--second-bg-color);
+}
+.btn-color-1:hover{
+    transform: translateY(-2px);
+    background: var(--bgcolor);
+    color: var(--text-color);
+    border: var(--main-color) 0.12rem solid;
+    filter: drop-shadow(1px 3px 1px var(--main-color));
 }
