@@ -5,6 +5,7 @@
     #hamburger-nav{
         display: none;
     }
+    
 }
 @media screen and (max-width:1200px) {
     #desktop-nav{
@@ -13,4 +14,5 @@
     #hamburger-nav{
         display: flex;
     }
+    
 }

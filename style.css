@@ -170,8 +170,8 @@ section{
     
 }
 .section-pic-container:hover{
-    transform: translateY(-4px);
-    transition: all .5s ease;
+    transform: translateX(-4px) translateY(-4px);
+    transition: all .7s ease;
 }
 .section-text{
     align-self: center;
@@ -219,6 +219,7 @@ section{
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    gap: 1rem;
 }
 .btn-color-2{
     border: var(--text-color) 0.12rem solid;
@@ -240,4 +241,71 @@ section{
     color: var(--text-color);
     border: var(--main-color) 0.12rem solid;
     filter: drop-shadow(1px 3px 1px var(--main-color));
+}
+#about{
+    position: relative;
+    transition: all .6s ease;
+}
+.about-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.about-container,.about-details-container{
+    display: flex;
+}
+.about-pic{
+    margin-top: 4rem;
+    width: max-content;
+    height: 80%;
+    border-radius: 2rem;
+   
+}
+.pic:hover{
+    filter: drop-shadow(1px 3px 2px var(--text-color));
+}
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+} 
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: var(--bgcolor);
+    border-radius: 2rem;
+    border: var(--text-color) 0.05rem solid ;
+    border-color: var(--second-color);
+    text-align: center;
+}
+.details-container p{
+    margin-top: 0.3rem;
+}
+.details-container span{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}       
+.text-container{
+    line-height: 3vh;
+}
+.text-container span{
+    color: var(--second-color);
+    font-weight: 700;
+}
+.details-container:hover{
+    color: var(--text-color);
+    border: var(--main-color) 0.12rem solid;
+    filter: drop-shadow(1px 2px 1px var(--main-color));
+    transform: scale(1.05);
+    transition: all .6s ease;
 }
