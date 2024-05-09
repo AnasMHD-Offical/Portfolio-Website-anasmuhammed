@@ -8,7 +8,7 @@
     --text-color: #000000;
     --main-color: #00cf18;
     --second-color: #010434;
-    --other-color: #ffffff;
+    --other-color: #f4fff0;
     --second-bg-color: #7ED957;
 
     --h1-font: 3rem;
@@ -244,7 +244,7 @@ section{
     border: var(--main-color) 0.12rem solid;
     filter: drop-shadow(1px 3px 1px var(--main-color));
 }
-#about{
+#About{
     position: relative;
     transition: all .6s ease;
 }
@@ -365,4 +365,20 @@ article div p{
     font-size: var(--p-low-font);
     font-weight: 200;
     color: var(--main-color);
+}
+#Projects{
+    position: relative;
+}
+.color-container{
+    border-color: var(--second-color);
+    background: var(--other-color);
+}
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+.project-title{
+    margin: 1rem;
+    color: var(--text-color);
 }
