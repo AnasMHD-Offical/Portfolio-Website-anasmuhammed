@@ -371,7 +371,7 @@ article div p{
 }
 .color-container{
     border-color: var(--second-color);
-    background: var(--other-color);
+    background: var(--bgcolor);
 }
 .project-img{
     border-radius: 2rem;
@@ -381,4 +381,59 @@ article div p{
 .project-title{
     margin: 1rem;
     color: var(--text-color);
+}
+#Contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-upper-container{
+    border-radius: 2rem;
+    border: var(--text-color) 0.1rem solid;
+    border-color: var(--second-color);
+    background: var(--bgcolor);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+.contact-info-container a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contact-info-container p{
+    font-size: var(--main-font);
+}
+.contact-info-upper-container:hover{
+    background: var(--bgcolor);
+    color: var(--text-color);
+    border: var(--main-color) 0.12rem solid;
+    filter: drop-shadow(1px 2px 1px var(--main-color));
+    transform: scale(1.05);
+    transition: all .6s ease;
+}
+.contact-icon{
+    cursor: default;
+}
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
+    font-size: var(--p-font);
+    font-weight: 300;
 }
