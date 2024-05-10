@@ -1,9 +1,29 @@
+@media screen and (max-width:1400px) {
+    #hero{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+    
+}
+
 @media screen and (min-width:1200px) {
     #desktop-nav{
         display: flex;
     }
     #hamburger-nav{
         display: none;
+    }
+    .pic{
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: end;
+        justify-content: center;
+    }
+    .section-pic-container{
+        filter: drop-shadow(1px 1px 1px var(--second-color));
     }
     
 }
@@ -13,6 +33,92 @@
     }
     #hamburger-nav{
         display: flex;
+        z-index: 10001;
     }
-    
+    #Experience , .experience-details-container{
+        margin-top: 2rem;
+    }
+    #hero , .section-conatiner{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section, .section-conatiner{
+        height: fit-content;
+
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section-pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 1rem;
+    }
+    .about-container{
+        margin-top: 0;
+    }
+    .section-about{
+         flex-wrap: wrap; 
+         justify-content: center;
+    }
+    .pic{
+        justify-content: center;
+        align-items: center;
+    }
+    .about-details-container{        
+        justify-content: center;
+        text-align: center;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:600px) {
+    #Contact , footer{
+        height: 40vh;
+    }
+    #hero{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: var(--p-font);
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-container,.contact-info-upper-container,.btn-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 0;
+    }
+    .contact-info-container p,.nav-links li a{
+        font-size: var(--p-font);
+    }
+    .experience-sub-title{
+        font-size: var(--hero-p-font);
+    }
+    .logo{
+        font-size: var(--main-font);
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section-pic-container{
+        width: auto;
+        height: 46vh;
+        justify-content: center;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
 }
